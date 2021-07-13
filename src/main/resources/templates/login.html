@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>todoLogin</title>
+    <link th:href=@{/css/bootstrap.css} rel="stylesheet" type="text/css" />
+    <link th:href=@{/css/loginstylesheet.css} rel="stylesheet" type="text/css" />
+  <script th:src="@{/webjars/jquery/jquery.min.js}" defer></script >
+  <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}" defer ></script>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <h1>Todo Sign In</h1>
+      <form method="post" th:action="@{/login}">
+      <p th:if="${session['SPRING_SECURITY_LAST_EXCEPTION']}!=null"
+      	th:text="${session['SPRING_SECURITY_LAST_EXCEPTION'].message}"
+      	class="text-danger">ログインエラーメッセージ</p>
+        <div class="form-item">
+          <label for="name"></label>
+          <input type="text" name="name" required="required" placeholder="name"></input>
+        </div>
+        <div class="form-item">
+          <label for="password"></label>
+          <input type="password" name="password" required="required" placeholder="Password"></input>
+        </div>
+        <div class="button-panel">
+          <input type="submit" class="button" title="Sign In" value="Sign In"></input>
+        </div>
+      </form>
+      <div class="form-footer">
+        <p><a href="@{user/signup}">Create an account</a></p>
+        <!-- <p><a href="#">Forgot password?</a></p> -->
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+ <link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/stylesheet.css}" rel="stylesheet" type="text/css"></head>
+<body>
+<div class=" w-75 h-25 my-1 mx-auto pt-5">
+    <div class="container">
+        <div  class="row" th:object="${form}">
+        <form action="#" method="post">
+        <p>タイトル：<span th:text="*{title}"></span></p>
+        <p>期限：<span th:text="*{date}"></span></p>
+        <p>以上の内容で登録しますか？
+        <button type="submit">登録</button></p>
+        </form>
+           
+                
+        </div>
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-5 pl-5">
+    <form method="post" action="/todo">
+    
+    </form>
+    </div></div>
+    </div>
+</div>
+
+</body>
+</html>

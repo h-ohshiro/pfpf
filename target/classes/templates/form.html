@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo登録画面</title>
+ <link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/stylesheet.css}" rel="stylesheet" type="text/css"></head>
+<body>
+<div class=" w-75 h-25 my-1 mx-auto pt-5">
+    <div class="container">
+       <div class="row">
+<table>
+        <tr th:if="${validationError}" th:each="error : ${validationError}">
+            <td style="color: red;" th:text="${error}"></td>
+        </tr>
+    </table>
+                <form th:action="@{/form}" method="post" th:object="${entity}">
+               <input class="todotext" type="text" th:field="*{title}" th:errorclass="is-invalid">
+               <div class="invalid-feedback" th:errors="*{title}"></div>
+               <button class="btn" type="submit">登録</button>
+               <a class="btn" th:href="@{/todo}">キャンセル</a>
+                </form>
+                
+        </div>
+    </div>
+    <div class="container">
+    <div class="row">
+    <div class="col-5 pl-5">
+    </div></div>
+    </div>
+</div>
+
+</body>
+</html>

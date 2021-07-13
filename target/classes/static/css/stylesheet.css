@@ -1,0 +1,261 @@
+.jumbotron {
+  background-image: url("../images/top.jpg");
+  height: 300px;
+  background-size: cover;
+  text-align: center;
+  line-height: center;
+  position: relative;
+}
+body {
+  background-color: #eee;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  color: white;
+  font-size: 3em;
+  text-decoration: none;
+}
+.title:hover {
+  color: white;
+}
+
+.contents {
+  font-size: 1.2em;
+}
+.text {
+  vertical-align: middle;
+}
+.mar {
+  overflow-wrap: break-word;
+  margin-top: 1em;
+}
+.left-contents {
+  position: relative;
+  background-color: #333;
+  color: white;
+  height: 300px;
+}
+.left-contents p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.left-contents input {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: auto;
+  text-align: center;
+}
+
+.right-contents {
+  align-items: center;
+  display: flex;
+  background-color: white;
+}
+.right-content {
+  background-color: white;
+}
+.img-fluid{
+	  height: 300px;
+	    width:auto;
+	  
+	
+}
+img {
+  height: 300px;
+  width:auto;
+  text-align: center;
+}
+.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-contents a {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: white;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: 0.4s;
+  margin-bottom: 10px;
+  background: #2c7cff;
+}
+
+.left-contents a:hover {
+  background-color: #333;
+}
+.left-contents input {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: white;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: 0.4s;
+  margin-bottom: 10px;
+  background: #2c7cff;
+}
+
+.left-contents input:hover {
+  background-color: #333;
+}
+@media screen and (max-width: 1000px) {
+  p {
+    font-size:0.9em;
+  }
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size:1.0em;
+  }
+}
+
+.footer {
+  height: 30px;
+}
+
+.todotop{
+	margin:20px;
+	
+}
+.createbutton{
+	margin-top:10px;
+	text-decoration: none;
+}
+.todotitle{
+	border-radius:3px;
+	border:1px solid #333;	
+}
+.todotitle p{
+	font-size:1em;	
+}
+.todotitle p{
+  vertical-align: middle;
+  line-height:40px;
+}
+.cusb{
+	margin:10px;
+}
+.btn{
+	text-decoration: none;
+	background-color:#555;
+	border-radius:3px;
+	color:white;
+	margin:5px;
+}
+.btn:hover{
+	color:#555;
+	border:solid 1px #ccc;
+	background-color:white;
+}
+.todobtn{
+	margin:0 5px;
+}
+.edittop{
+	margin-top:20px;
+}
+input.todotext{
+	width:20em;
+}
+
+/* AndroidApp用のコード */
+.appreach {
+  margin: 80px 0;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #7c7c7c;
+  overflow: hidden;
+}
+.appreach:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.appreach p {
+  margin: 0;
+}
+.appreach a:after {
+  display: none;
+}
+.appreach__icon {
+  float: left;
+  border-radius: 10%;
+  overflow: hidden;
+  margin: 0 3% 0 0 !important;
+  width: 25% !important;
+  height: auto !important;
+  max-width: 120px !important;
+}
+.appreach__detail {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 72%;
+  max-width: 72%;
+}
+.appreach__detail:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.appreach__name {
+  font-size: 16px;
+  line-height: 1.5em !important;
+  max-height: 3em;
+  overflow: hidden;
+}
+.appreach__info {
+  font-size: 12px !important;
+}
+.appreach__developper,
+.appreach__price {
+  margin-right: 0.5em;
+}
+.appreach__posted a {
+  margin-left: 0.5em;
+}
+.appreach__links {
+  float: left;
+  height: 40px;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+.appreach__aslink img {
+  margin-right: 10px;
+  height: 40px;
+  width: 135px;
+}
+.appreach__gplink img {
+  height: 50px;
+  width: auto;
+}
+.appreach__star {
+  position: relative;
+  font-size: 14px !important;
+  height: 1.5em;
+  width: 5em;
+}
+.appreach__star__base {
+  position: absolute;
+  color: #737373;
+}
+.appreach__star__evaluate {
+  position: absolute;
+  color: #ffc107;
+  overflow: hidden;
+  white-space: nowrap;
+}
