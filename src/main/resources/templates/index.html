@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css">
-    <link th:href="@{/css/stylesheet.css}" rel="stylesheet" type="text/css">
-    
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" />
+    <link th:href="@{/css/stylesheet.css}" rel="stylesheet" type="text/css" />
 
     <title>ポートフォリオ</title>
   </head>
@@ -31,9 +30,7 @@
             <img src="https://play-lh.googleusercontent.com/P9s_-ogUcWyJQ-hIDX0AUBrxitbUNomSE88FY9HEFUp1VuA2y6GEsaEcLKt1tvLT3ls=s128" alt="大富豪必勝" class="appreach__icon" />
             <div class="appreach__detail">
               <p class="appreach__name">大富豪必勝</p>
-              <p class="appreach__info">
-                <span class="appreach__developper">h.ohshiro</span><span class="appreach__price">無料</span>
-              </p>
+              <p class="appreach__info"><span class="appreach__developper">h.ohshiro</span><span class="appreach__price">無料</span></p>
             </div>
             <div class="appreach__links">
               <a target="_blank" href="https://play.google.com/store/apps/details?id=io.github.ohshiro.cardsrichman" rel="nofollow" class="appreach__gplink"><img src="https://nabettu.github.io/appreach/img/gplay_ja.png" /></a>
@@ -50,8 +47,10 @@
             以下のリンクから利用できます。<br /><br />
             <span><a target="_blank" href="https://github.com/h-ohshiro/portfolio">GitHubへ</a></span>
           </p>
-            <form method="get" th:action="@{/login}">
-            <input type="submit" value="ユーザー管理アプリへ"></form><br />
+          <form method="get" th:action="@{/login}">
+            <input type="submit" value="ユーザー管理アプリへ" />
+          </form>
+          <br />
         </div>
         <div class="right-contents col-md-6">
           <img class="photo img-fluid" th:src="@{/images/javaSE11.jpg}" alt="JAVA SE11 silverの画像" />
@@ -78,9 +77,9 @@
             Messaging APIを利用し、<br />
             LINE Botを作成しました。<br />
             育てている花の水やり周期をスプレッドシートに入力<br />
-            すると、定期的に「お水をください」とお花から送信されます。<br>
+            すると、定期的に「お水をください」とお花から送信されます。<br />
             使用言語：JavaScript
-            <br /><br /><span><a target="_blank" href="https://github.com/h-ohshiro/GAS">GitHubへ</a></span>
+            <br /><br /><span><a target="_blank" href="https://github.com/h-ohshiro/gasLineBot">GitHubへ</a></span>
           </p>
         </div>
         <div class="right-contents col-md-6">
@@ -93,7 +92,7 @@
           <p class="text">
             Google Apps Script（GAS）およびYouTube APIを利用し、<br />Twitter Botを作成しました。<br />
             特定のチャンネルの動画情報をランダムにつぶやき宣伝します。<br />
-            使用言語：PHP<br /><br /><span><a target="_blank" href="https://github.com/h-ohshiro/akipro">GitHubへ</a></span>
+            使用言語：PHP<br /><br /><span><a target="_blank" href="https://github.com/h-ohshiro/twitterB">GitHubへ</a></span>
           </p>
         </div>
         <div class="right-contents col-md-6">
